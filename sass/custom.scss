@@ -1,0 +1,232 @@
+//Globales y variables
+
+$font-family-sans-serif : 'Poppins', sans-serif;
+$montserrat : 'Montserrat', sans-serif;
+$primary:#FB6834;
+$secondary: #484848;
+
+$spacer: 5rem;
+
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 720px,
+  xl: 1000px,
+  xxl: 1414px
+);
+
+$position-values: (
+  50: 50%,
+  80: 80%,
+);
+
+span{
+    font-weight: bold;
+}
+
+.size-26{
+    font-size: 26px;
+}
+
+//Header
+
+header{
+    padding: 62px 0;
+}
+
+.social-media{
+    width: 24px;
+    height: 24px;
+    &:not(:last-child){
+        margin-right: 80px;
+    }
+}
+
+
+.ellipse:not(:last-child){
+    margin-right: 20px;
+}
+
+
+.link-nav{
+    text-decoration: none;
+    text-transform: uppercase;
+    &:not(:last-child){
+        margin-right: 15px;
+    }
+}
+
+.first, .second {
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.first{
+    background-image: url(../img/left.jpg);
+}
+
+.second{
+    background-image: url(../img/right.jpg);
+}
+
+
+.slider{
+    height: 523px;
+}
+
+.info{
+    width: 460px;
+}
+
+.title{
+    font-size: 24px;
+    text-transform: uppercase;
+    max-width: 370px;
+    font-weight: 300;
+    span{
+        margin-top: 10px;
+    }
+}
+//Seccion imagen desierto  
+.imagen{
+    height: 100%;
+    width: 100%;
+}
+
+.descripcion{
+    max-width: 491px;
+    font-weight: 300;
+}
+
+//Seccion accordion
+.bg-2{
+    background-image: url(../img/bg2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 108px 0;
+}
+
+.accordion{
+    width: 600px;
+}
+
+.accordion_item{
+    padding: 20px;
+}
+.accordion_item:not(:last-child) {
+    border-bottom: 2px solid $primary;
+  }   
+
+  //Seccion Suscripcion
+.boton{
+    border: 0;
+    border-radius: 2px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.suscribete{
+    padding: 114px 0;
+
+    label{
+        color: white;
+        font-size: 28px;
+        text-transform: uppercase;
+        margin-bottom: -15px;
+        span{
+            font-size: 45px;
+        }
+    }
+}
+
+.email_suscripcion{
+    border:none;
+    background-image:none;
+    background-color:transparent;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    border-bottom: 2px solid white;
+    width: 465px;
+
+    &::placeholder{
+        color: white;
+        padding-left: 20px;
+        font-weight: 300;
+    }
+    
+}
+
+.btn-suscribete{
+    padding: 16px 63px;
+    font-size: 18px;
+}
+
+//Formulario contacto
+
+.legend{
+    font-family: $montserrat;
+    color: $secondary;
+}
+.filas > * {
+    margin-bottom: 20px;
+}
+
+.field{
+    padding: 6px 0;
+}
+
+.btn-enviar{
+    padding: 17px 0;
+    font-size: 21px;
+}
+
+//Footer
+footer{
+
+    .f-link{
+        display: block;
+        color: white;
+        text-transform: uppercase;
+        text-decoration: none;
+        font-size: 20px;
+        margin-bottom: 8px;
+    }
+
+}
+
+
+@media (min-width: 1440px) {
+    .slider {
+        height: 823px;
+    }
+    .title{
+        font-size: 36px;
+        max-width: 530px;
+    }
+
+    .info{
+        width: 560px;
+    }
+
+    .descripcion{
+        max-width: 591px;
+    }
+    
+    .accordion{
+        width: 700px;
+    }
+
+    .social-container{
+        margin-right: 200px;
+    }
+
+    .link-nav{
+        &:not(:last-child){
+            margin-right: 75px;
+        }
+    }
+
+}
+
+@import "../node_modules/bootstrap/scss/bootstrap";
