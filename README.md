@@ -2,7 +2,7 @@
 
 Landing page creada usando Bootstrap 5 y Sass.
 
-https://prueba-daniel.netlify.app
+PREVIEW SITE: https://prueba-daniel.netlify.app
 
 ## Notas
 La pagina web alcanza el maximo porcentaje de similitud si es visualizada en una resolucion de 1920px.
